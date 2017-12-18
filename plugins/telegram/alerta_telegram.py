@@ -69,6 +69,7 @@ class TelegramBot(PluginBase):
                    "can't handle your telegram template message."
 
         LOG.debug('Telegram: message=%s', text)
+        LOG.debug('Telegram: mymessage=%s', text)
 
         if TELEGRAM_WEBHOOK_URL:
             keyboard = {
